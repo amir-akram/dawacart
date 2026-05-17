@@ -12,8 +12,8 @@ const slides = [
     alt: "Dawacart Offer",
 
     content: (
-      <div className="absolute left-[25%] bottom-[16%] text-right">
-        <button className="cursor-pointer mt-4 bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-full text-xs sm:text-base font-semibold transition uppercase tracking-wide">
+      <div className="absolute left-[22%] bottom-[12%] text-right">
+        <button className="cursor-pointer  bg-red-500 hover:bg-red-600 text-white px-3 py-1.5 rounded-full text-[10px] sm:text-base font-semibold transition uppercase tracking-wide">
           Claim Now
         </button>
       </div>
@@ -26,17 +26,17 @@ const slides = [
     alt: "First Order Offer",
 
     content: (
-      <div className="absolute right-[7%] top-1/2 -translate-y-1/2 max-w-[38%]">
+      <div className="absolute right-[5%] top-1/2 -translate-y-1/2 max-w-[38%]">
         
-        <h2 className="text-black text-2xl sm:text-5xl font-black leading-tight mt-8">
+        <h2 className="text-black text-lg sm:text-5xl font-black leading-[0.95] mt-8">
           FIRST ORDER?
         </h2>
 
-        <p className="text-black text-sm sm:text-xl font-medium uppercase">
+        <p className="text-black text-xs sm:text-xl font-medium uppercase">
           Use coupon code
         </p>
 
-        <div className="inline-block mt-3 bg-black text-yellow-500 px-5 py-2 rounded-xl text-lg sm:text-2xl font-black tracking-wider">
+        <div className="inline-block mt-3 bg-black text-yellow-500 px-3 py-1.5 rounded-xl text-sm sm:text-2xl font-black tracking-wider">
           DAWA50
         </div>
       </div>
@@ -50,19 +50,19 @@ const slides = [
 
     content: (
       <div className="absolute right-[10%] top-1/2 -translate-y-1/2 text-right">
-        <p className="text-white/80 text-sm sm:text-lg font-medium">
+        <p className="text-white/80 text-xs sm:text-lg font-medium">
           Fastest Medicine Delivery 
         </p>
 
-        <h2 className="text-orange-600 text-2xl sm:text-5xl font-black leading-tight">
+        <h2 className="text-orange-600 text-[16px] sm:text-5xl font-black leading-[0.95]">
           IN PRAYAGRAJ
         </h2>
 
-        <p className="text-white/80 text-lg sm:text-3xl font-bold">
+        <p className="text-white/80 text-xs sm:text-3xl font-bold">
           24×7 Available
         </p>
 
-        <button className="mt-5 bg-yellow-500 text-black hover:bg-white hover:text-black px-5 py-2.5 rounded-full text-sm sm:text-base font-semibold transition">
+        <button className="mt-3 bg-white/80 text-black hover:bg-white hover:text-black px-3 py-1.5 rounded-full text-[10px] sm:text-base font-semibold transition">
           Order Medicines
         </button>
       </div>
@@ -77,7 +77,7 @@ const slides = [
     content: (
       <div className="absolute left-[6%] top-[50%] -translate-y-1/2 w-[52%] sm:w-auto sm:max-w-[40%]">
 
-        <h2 className="text-sky-950 text-2xl sm:text-5xl font-black leading-[0.95] mt-1">
+        <h2 className="text-sky-950 text-[16px] sm:text-5xl font-black leading-[0.95] mt-1">
           DOWNLOAD
           <br />
           DAWACART APP
@@ -88,11 +88,11 @@ const slides = [
         </p>
 
         <div className="flex gap-2 mt-5">
-          <button className="bg-black text-white px-2.5 py-1.25 rounded-full text-xs sm:text-base font-semibold">
+          <button className="bg-black text-white px-2.5 py-1.25 rounded-full text-[10px] sm:text-base font-semibold">
             Download App
           </button>
 
-          <button className="bg-white text-black px-2.5 py-1.25 rounded-full text-xs sm:text-base font-semibold border border-black/10">
+          <button className="bg-white text-black px-2.5 py-1.25 rounded-full text-[10px] sm:text-base font-semibold border border-black/10">
             Order Now
           </button>
         </div>
@@ -104,7 +104,7 @@ const slides = [
 export default function HeroCarousel() {
   const autoplayRef = useRef(
     Autoplay({
-      delay: 2500,
+      delay: 3000,
       stopOnInteraction: false,
     })
   );
