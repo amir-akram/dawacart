@@ -13,7 +13,7 @@ export default function Navbar() {
         <Link href="/profile" className="flex items-center gap-3 group">
           <div className="relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-red-500 ring-offset-1 flex-shrink-0 group-hover:ring-red-600 transition-all">
             <Image
-              src="/mock.png"
+              src="/dp.png"
               alt="Profile"
               fill
               className="object-cover"

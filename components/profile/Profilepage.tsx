@@ -46,7 +46,7 @@ export default function ProfilePage() {
             {/* Profile Card */}
             <div className="rounded-2xl border border-gray-100 shadow-sm bg-white p-4 flex items-center gap-4">
               <div className="relative w-16 h-16 rounded-2xl overflow-hidden border-2 border-red-100 flex-shrink-0">
-                <Image src="/mock.png" alt="Profile" fill className="object-cover" />
+                <Image src="/dp.png" alt="Profile" fill className="object-cover" />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-base font-bold text-gray-900 truncate">Aamir Khan</p>

@@ -7,9 +7,9 @@ import { FiArrowLeft, FiTrash2, FiShoppingBag, FiTag } from "react-icons/fi";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 const initialCartItems = [
-  { id: 1, name: "Dolo 500mg",    brand: "Protein Based", price: 120, originalPrice: 240, qty: 1, tag: "50% OFF"   , image: "/med1.png"   },
-  { id: 2, name: "Telmisartan 40mg", brand: "Sun Pharma",    price: 85,  originalPrice: 110, qty: 2, tag: null         , image: "/med2.png" },
-  { id: 3, name: "clocip antifungal powder",   brand: "Cipla",         price: 45,  originalPrice: 60,  qty: 1, tag: "BESTSELLER" , image: "/med4.png" },
+  { id: 1, name: "Paracetamol 500mg",    brand: "Dolo", price: 120, originalPrice: 240, qty: 1, tag: "50% OFF"   , image: "/med1.png"   },
+  { id: 2, name: "Telmisartan 40mg", brand: "mankind",    price: 85,  originalPrice: 110, qty: 2, tag: null         , image: "/med2.png" },
+  { id: 3, name: "Clocip anti-fungal powder",   brand: "Cipla",         price: 45,  originalPrice: 60,  qty: 1, tag: "BESTSELLER" , image: "/med4.png" },
 ];
 
 type CartItem = (typeof initialCartItems)[0];

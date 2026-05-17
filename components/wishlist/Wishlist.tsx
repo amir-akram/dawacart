@@ -7,15 +7,15 @@ import { AiFillHeart, AiOutlineHeart, AiOutlineShareAlt, AiFillStar } from "reac
 import { FiBell, FiShoppingCart } from "react-icons/fi";
 
 const initialItems = [
-  { id: 1, name: "Covid-19 Vaccine",    brand: "Protein Based", price: 120, originalPrice: 240, rating: 4.5, reviews: 128, tag: "50% OFF"  , image: "/med1.png" },
-  { id: 2, name: "Vitamin D3 Capsules", brand: "Sun Pharma",    price: 85,  originalPrice: 110, rating: 4.3, reviews: 94,  tag: null         , image: "/med2.png" },
-  { id: 3, name: "Paracetamol 500mg",   brand: "Cipla",         price: 45,  originalPrice: 60,  rating: 4.7, reviews: 312, tag: "BESTSELLER" , image: "/med3.png" },
-  { id: 4, name: "Omega-3 Fish Oil",    brand: "Biocon",        price: 199, originalPrice: 250, rating: 4.2, reviews: 67,  tag: "NEW"        , image: "/med4.png" },
+  { id: 1, name: "Paracetamol 500mg",    brand: "Dolo", price: 120, originalPrice: 240, rating: 4.5, reviews: 128, tag: "50% OFF"  , image: "/med1.png" },
+  { id: 2, name: "Telmisartan 40mg", brand: "mankind",    price: 85,  originalPrice: 110, rating: 4.3, reviews: 94,  tag: null         , image: "/med2.png" },
+  { id: 3, name: "Himalaya Koflet-SF",   brand: "Cipla",         price: 45,  originalPrice: 60,  rating: 4.7, reviews: 312, tag: "BESTSELLER" , image: "/med3.png" },
+  { id: 4, name: "Clocip anti-fungal powder",    brand: "Biocon",        price: 199, originalPrice: 250, rating: 4.2, reviews: 67,  tag: "NEW"        , image: "/med4.png" },
 ];
 
 function WishlistCard({ item, onRemove }: { item: (typeof initialItems)[0]; onRemove: (id: number) => void }) {
   return (
-    <div className="bg-white p-4 rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md hover:border-red-100 transition-all">
+    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md hover:border-red-100 transition-all">
       <div className="relative aspect-square flex items-center justify-center">
         {item.tag && (
           <span className={`absolute top-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded-full z-10 ${
@@ -30,7 +30,7 @@ function WishlistCard({ item, onRemove }: { item: (typeof initialItems)[0]; onRe
         <button className="absolute top-10.5 right-2 p-1.5 rounded-full bg-white shadow-sm hover:scale-110 transition-transform z-10">
           <AiOutlineShareAlt className="w-4 h-4 text-gray-400" />
         </button>
-        <Image src={item.image} alt={item.name} fill className="object-cover" />
+        <Image src={item.image} alt={item.name} fill className="object-cover p-4" />
       </div>
       <div className="p-3">
         <p className="text-sm font-bold text-gray-800 leading-snug truncate">{item.name}</p>

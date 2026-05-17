@@ -5,17 +5,17 @@ import { useState } from "react";
 import { AiOutlineHeart, AiFillHeart, AiOutlineShareAlt, AiFillStar } from "react-icons/ai";
 
 const products = [
-  { id: 1, name: "Dolo 500mg",   brand: "Protein Based", price: 120, originalPrice: 240, rating: 4.5, reviews: 128, tag: "50% OFF" , image: "/med1.png" },
-  { id: 2, name: "Telmisartan 40mg", brand: "Sun Pharma",    price: 85,  originalPrice: 110, rating: 4.3, reviews: 94,  tag: null   , image: "/med2.png" },
+  { id: 1, name: "Paracetamol 500mg",   brand: "Dolo", price: 120, originalPrice: 240, rating: 4.5, reviews: 128, tag: "50% OFF" , image: "/med1.png" },
+  { id: 2, name: "Telmisartan 40mg", brand: "mankind",    price: 85,  originalPrice: 110, rating: 4.3, reviews: 94,  tag: null   , image: "/med2.png" },
   { id: 3, name: "Himalaya Koflet-SF",   brand: "Cipla",         price: 45,  originalPrice: 60,  rating: 4.7, reviews: 312, tag: "BESTSELLER" , image: "/med3.png" },
-  { id: 4, name: "Clocip antifungal powder",    brand: "Biocon",        price: 199, originalPrice: 250, rating: 4.2, reviews: 67,  tag: "NEW"        , image: "/med4.png" },
+  { id: 4, name: "Clocip anti-fungal powder",    brand: "Biocon",        price: 199, originalPrice: 250, rating: 4.2, reviews: 67,  tag: "NEW"        , image: "/med4.png" },
 ];
 
 export function ProductCard({ product }: { product: (typeof products)[0] }) {
   const [wished, setWished] = useState(false);
 
   return (
-    <div className="bg-white p-4 rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md hover:border-red-100 transition-all">
+    <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden hover:shadow-md hover:border-red-100 transition-all">
       {/* 1:1 Image Area */}
       <div className="relative aspect-square flex items-center justify-center">
         {/* Tag */}
@@ -48,7 +48,7 @@ export function ProductCard({ product }: { product: (typeof products)[0] }) {
           <AiOutlineShareAlt className="w-4 h-4 text-gray-400" />
         </button>
 
-        <Image src={product.image} alt={product.name} fill className="object-cover" />
+        <Image src={product.image} alt={product.name} fill className="object-cover p-4" />
       </div>
 
       {/* Info */}
