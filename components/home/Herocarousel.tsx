@@ -6,10 +6,10 @@ import Autoplay from "embla-carousel-autoplay";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const slides = [
-  { id: 1, src: "/mankind.png",  alt: "Mankind Pharma" },
-  { id: 2, src: "/cipla.png",    alt: "Cipla"          },
-  { id: 3, src: "/drreddy.png",  alt: "Dr Reddy's"     },
-  { id: 4, src: "/cetaphil.png", alt: "Cetaphil"       },
+  { id: 1, src: "/ban0.png",  alt: "Mankind Pharma" },
+  { id: 2, src: "/ban1.png",    alt: "Cipla"          },
+  { id: 3, src: "/ban2.png",  alt: "Dr Reddy's"     },
+  { id: 4, src: "/ban3.png", alt: "Cetaphil"       },
 ];
 
 export default function HeroCarousel() {

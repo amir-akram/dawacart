@@ -32,7 +32,7 @@ export default function Navbar() {
           href="/"
           className="hidden lg:block text-lg font-black tracking-tight text-gray-900 hover:text-red-500 transition-colors absolute left-1/2 -translate-x-1/2"
         >
-          medi<span className="text-red-500">kart</span>
+          DAWA<span className="text-red-500">CART</span>
         </Link>
 
         {/* Right: Icons */}
